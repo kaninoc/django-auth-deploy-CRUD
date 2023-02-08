@@ -59,7 +59,11 @@ github
 git init
 git add .
 git commit -m "first commit"
+
+Subirlo a nube
+
 git remote add origin https://github.com/kaninoc/django-auth-deploy-CRUD.git
-git push origin main
+git branch -M main
+git push -u origin main
 
  kaninoc/django-auth-deploy-CRUD
