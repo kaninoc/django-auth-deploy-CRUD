@@ -1,0 +1,65 @@
+creacion entorno virtual 
+
+py -m venv venv
+
+instalacion django
+
+pip install django
+django-admin startproject djangocrud .
+
+correr server
+
+py manage.py runserver
+
+crear app 
+
+py .\manage.py startapp task
+
+crear tablas de base de datos
+
+py manage.py makemigrations
+py .\manage.py migrate 
+
+
+py manage.py shell 	interaccion consola 
+
+crear administrador
+py manage.py createsuperuser
+admin
+admin@geopark.com
+password qwPOzx56$%
+
+Subir archivo 
+ir a enlace y seguir instrucciones
+
+https://render.com/docs/deploy-django
+
+Update Your App For Render
+Configure Django for PostgreSQL
+
+en consola con entorno virtual 
+pip install dj-database-url psycopg2-binary
+
+
+Delegar funciones a servidor
+pegar configuracion desdues de static
+
+crear static root
+1 python manage.py collectstatic  o
+ 2python manage.py collectstatic --no-input
+
+crear archivo build.sh
+chmod a+x build.sh (ejecutar con gitbash)
+
+instalar gunicorn
+pip install gunicorn
+pip freeze > requirements.txt
+
+github
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/kaninoc/django-auth-deploy-CRUD.git
+git push origin main
+
+ kaninoc/django-auth-deploy-CRUD
